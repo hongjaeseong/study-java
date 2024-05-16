@@ -14,7 +14,7 @@ public class C01HelloWorld // 클래스 영역(객체지향 문법)
 		
 		
 		// TODO Auto-generated method stub
-		System.out.println("HELLOWORLD");
+		System.out.println("Hello World!");
 	}
 
 }
