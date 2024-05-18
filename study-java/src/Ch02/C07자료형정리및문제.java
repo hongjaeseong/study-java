@@ -1,6 +1,6 @@
 package Ch02;
 
-public class C07정리및문제 {
+public class C07자료형정리및문제 {
 
 	public static void main(String[] args) {
 //		정수 타입 		: byte, short, int,long
