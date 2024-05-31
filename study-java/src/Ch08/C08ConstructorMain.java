@@ -1,20 +1,14 @@
 package Ch08;
 
-// 생성자메서드?
-// 객체 생성시에 1회 호출되는 메서드
-// 생성된 객체 내에서는 사용이 불가!
-// 객체 생성시에 필요한 메모리공간 형성과 초기값 부여에 사용
-// 생성자 함수는 클래스명과 동일하며 반환자료형을 가지지 않는다
-// 생성자 함수를 클래스 내에 명시하지 않으면 컴파일러에 의해 디폴트 생성자 주입
-// 디폴트 생성자는 모든 멤버변수의 초기값을 0 (or false or null)으로 지정
-
 class C08Simple {
+	// 멤버 변수
 	int n1;
 	double n2;
 	boolean n3;
 	String n4;
 
-	public C08Simple() { // 생성자
+	// 생성자
+	public C08Simple() {
 		System.out.println("C08Simple() 호출!");
 		this.n1 = 100;
 		this.n2 = 200.2;
@@ -47,6 +41,12 @@ class C08Simple {
 		this.n3 = n3;
 		this.n4 = n4;
 	}
+
+	@Override
+	public String toString() {
+		return "C08Simple [n1=" + n1 + ", n2=" + n2 + ", n3=" + n3 + ", n4=" + n4 + "]";
+	}
+
 }
 
 public class C08ConstructorMain {
@@ -58,5 +58,6 @@ public class C08ConstructorMain {
 		C08Simple ob4 = new C08Simple(111, 222.4, false); // C08Simple(int n1,double n2,boolean n3) 호출!
 		C08Simple ob5 = new C08Simple(111, 222.4, false, "hong");
 		// C08Simple(int n1,double n2,boolean n,String n4) 호출!
+		System.out.println(ob5); // C08Simple [n1=111, n2=222.4, n3=false, n4=hong]
 	}
 }
