@@ -15,6 +15,7 @@ class Simple07 {
 
 public class C07Method가변인자 {
 	public static void main(String[] args) {
+
 		Simple07 obj = new Simple07();
 		obj.sum(10);
 		obj.sum(11, 22);
